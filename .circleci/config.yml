@@ -9,6 +9,7 @@ jobs:
     steps:
       - checkout
       - run:
+          working_directory: ~/project/app/
           command: npm test
           name: Test
 workflows:
