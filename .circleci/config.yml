@@ -1,0 +1,17 @@
+version: 2.1
+orbs:
+  node: circleci/node@5.1.0
+jobs:
+  node-app:
+    executor:
+      name: node/default
+      tag: 14.15.1
+    steps:
+      - checkout
+      - run:
+          command: npm test
+          name: Test
+workflows:
+  devops-teste:
+    jobs:
+    - node-app
