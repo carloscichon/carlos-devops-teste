@@ -1,0 +1,2 @@
+terraform_setup/.terraform*
+terraform_setup/terraform.tfstate*
