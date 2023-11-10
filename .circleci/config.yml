@@ -30,5 +30,6 @@ workflows:
           - aws-ecr/build-and-push-image # only run this job once aws-ecr/build-and-push-image has completed
         family: "node-app-task"
         cluster: "node-app-cluster"
+        service-name: "node-app-service"
         force-new-deployment: true
         container-image-name-updates: "container=node-app-task,tag=${CIRCLE_SHA1}"
