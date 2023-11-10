@@ -30,4 +30,6 @@ workflows:
           - aws-ecr/build-and-push-image # only run this job once aws-ecr/build-and-push-image has completed
         family: "${AWS_RESOURCE_NAME_PREFIX}-task"
         cluster: "${AWS_RESOURCE_NAME_PREFIX}-cluster"
+        service-name: "${AWS}_RESOURCE_NAME_PREFIX}-service"
+        force-new-deployment: true
         container-image-name-updates: "container=${AWS_RESOURCE_NAME_PREFIX}-service,tag=${CIRCLE_SHA1}"
