@@ -22,7 +22,7 @@ workflows:
     - node-app
     - aws-ecr/build-and-push-image:
         repo: "${AWS_RESOURCE_NAME_PREFIX}"
-        tag: "${CIRCLE_SHA1}"
+        tag: "latest"
         requires:
           - node-app
     - aws-ecs/deploy-service-update:
