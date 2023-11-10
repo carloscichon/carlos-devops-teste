@@ -32,4 +32,4 @@ workflows:
         cluster: "node-app-cluster"
         service-name: "node-app-service"
         force-new-deployment: true
-        container-image-name-updates: "container=node-app-task,tag=${CIRCLE_SHA1}"
+        container-image-name-updates: "container=node-app-task,tag=latest"
