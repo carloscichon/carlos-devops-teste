@@ -1,2 +1,2 @@
-terraform_setup/.terraform*
-terraform_setup/terraform.tfstate*
+terraform_config/.terraform*
+terraform_config/terraform.tfstate*
