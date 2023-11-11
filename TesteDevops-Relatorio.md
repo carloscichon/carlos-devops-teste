@@ -3,7 +3,6 @@ Carlos Eduardo Cichon Henriques
 
 ---
 
-[TOC]
 ## Ferramentas utilizadas
 - [Circleci](https://circleci.com/)
 - [Terraform](https://www.terraform.io/)
@@ -78,7 +77,7 @@ terraform apply
 ### Finalização da configuração do CircleCi
 Primeiramente, é necessário configurar algumas variáveis de ambiente no projeto do CircleCi. Dessa forma:
 
-![Captura de tela de 2023-11-11 00-32-47](https://hackmd.io/_uploads/r1_bI_2ma.png)
+![Captura de tela de 2023-11-11 00-32-47](https://i.imgur.com/YJPG0Yl.png)
 
 Com os recursos criados na AWS, e variáveis criadas é possível agora terminar a configuração do CircleCi no projeto. Em sua última versão, ele ficou desta maneira:
 ```
